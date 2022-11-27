@@ -37,7 +37,7 @@ const called = {
 
     },
 
-    delete: function(req, res) {
+    remove: function(req, res) {
 
         let id = req.params.id
 
