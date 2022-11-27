@@ -2,7 +2,7 @@ const mongoose = require('../config/db.connect')
 
 const calledSchema = new mongoose.Schema({
 
-    clinica: {
+    clinical: {
         type: String,
         require: true,
     },

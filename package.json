@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "node --watch --trace-warnings app.js",
-    "start": "node app.js"
+    "dev": "node --watch --trace-warnings ./src/app.js",
+    "start": "./src/node app.js"
   },
   "keywords": [],
   "author": "Felipe Borges",
