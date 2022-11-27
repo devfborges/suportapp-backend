@@ -50,4 +50,18 @@ route.delete('/chamado/:id', (req, res) => {
 
 })
 
+route.put('/edit/chamado/:id', (req, res) => {
+
+    let id = req.params.id
+    let { clinical, suport, description } = req.body
+
+    Called.findByIdAndUpdate(id, {clinical, suport, description})
+    .then( doc => {
+        res.status(202).json(doc)
+    }).catch( err => {
+        res.status(404).json(err)
+    })
+
+})
+
 module.exports = app => app.use('/app', route)
